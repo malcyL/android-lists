@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">lists</string>
+    <string name="menu_simple_list">Simple List</string>
+    <string name="hello_world">Choose a list from the menu.</string>
+
+</resources>
