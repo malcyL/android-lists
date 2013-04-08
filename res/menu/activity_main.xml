@@ -3,4 +3,7 @@
     <item android:id="@+id/menu_simple_list"
         android:title="@string/menu_simple_list"/>
     
+    <item android:id="@+id/menu_background_thread_list"
+        android:title="@string/menu_background_thread_list"/>
+    
 </menu>

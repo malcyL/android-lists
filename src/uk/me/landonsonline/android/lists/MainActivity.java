@@ -30,6 +30,10 @@ public class MainActivity extends Activity {
 	    Intent simpleListIntent = new Intent(this, SimpleListActivity.class);
 	    startActivity(simpleListIntent);
 	    return true;
+	case R.id.menu_background_thread_list:
+	    Intent backgroundThreadListIntent = new Intent(this, BackgroundThreadListActivity.class);
+	    startActivity(backgroundThreadListIntent);
+	    return true;
 	}
 
 	return super.onOptionsItemSelected(item);

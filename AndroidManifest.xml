@@ -26,6 +26,10 @@
             android:name="uk.me.landonsonline.android.lists.SimpleListActivity"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name="uk.me.landonsonline.android.lists.BackgroundThreadListActivity"
+            android:label="@string/app_name" >
+        </activity>
         </application>
 
 </manifest>
