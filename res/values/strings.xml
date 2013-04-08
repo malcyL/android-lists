@@ -5,6 +5,9 @@
     <string name="hello_world">Choose a list from the menu.</string>
 
     <string name="menu_simple_list">Simple List</string>
+    <string name="simple_list">Simple List</string>
+    
     <string name="menu_background_thread_list">Background Thread List</string>
+    <string name="background_thread_list">Background Thread List</string>
     
 </resources>
