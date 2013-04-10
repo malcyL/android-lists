@@ -34,6 +34,10 @@ public class MainActivity extends Activity {
 	    Intent backgroundThreadListIntent = new Intent(this, BackgroundThreadListActivity.class);
 	    startActivity(backgroundThreadListIntent);
 	    return true;
+	case R.id.menu_multi_select_list:
+	    Intent multSelectListIntent = new Intent(this, MultiSelectListActivity.class);
+	    startActivity(multSelectListIntent);
+	    return true;
 	}
 
 	return super.onOptionsItemSelected(item);
