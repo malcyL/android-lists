@@ -31,6 +31,10 @@
             android:label="@string/background_thread_list" >
         </activity>
         <activity
+            android:name="uk.me.landonsonline.android.lists.CustomLayoutListActivity"
+            android:label="@string/custom_layout_list" >
+        </activity>
+        <activity
             android:name="uk.me.landonsonline.android.lists.MultiSelectListActivity"
             android:label="@string/multi_select_list" >
         </activity>

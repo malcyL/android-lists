@@ -10,6 +10,9 @@
     <string name="menu_background_thread_list">Background Thread List</string>
     <string name="background_thread_list">Background Thread List</string>
     
+    <string name="menu_custom_layout_list">Custom Layout List</string>
+    <string name="custom_layout_list">Custom Layout List</string>
+    
     <string name="menu_multi_select_list">Multi Select List</string>
     <string name="multi_select_list">Multi Select List</string>
 
