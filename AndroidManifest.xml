@@ -34,6 +34,10 @@
             android:name="uk.me.landonsonline.android.lists.MultiSelectListActivity"
             android:label="@string/multi_select_list" >
         </activity>
+        <activity
+            android:name="uk.me.landonsonline.android.lists.CustomLayoutMultiSelectListActivity"
+            android:label="@string/custom_layout_multi_select_list" >
+        </activity>
         </application>
 
 </manifest>

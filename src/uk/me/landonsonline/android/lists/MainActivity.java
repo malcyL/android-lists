@@ -38,6 +38,10 @@ public class MainActivity extends Activity {
 	    Intent multSelectListIntent = new Intent(this, MultiSelectListActivity.class);
 	    startActivity(multSelectListIntent);
 	    return true;
+	case R.id.menu_custom_layout_multi_select_list:
+	    Intent customLayoutMultSelectListIntent = new Intent(this, CustomLayoutMultiSelectListActivity.class);
+	    startActivity(customLayoutMultSelectListIntent);
+	    return true;
 	}
 
 	return super.onOptionsItemSelected(item);
