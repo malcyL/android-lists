@@ -8,11 +8,13 @@ import android.app.LoaderManager;
 import android.content.AsyncTaskLoader;
 import android.content.Loader;
 import android.os.Bundle;
+import android.util.SparseBooleanArray;
 import android.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class CustomLayoutMultiSelectListActivity extends ListActivity implements
 LoaderManager.LoaderCallbacks<List<String>> {
@@ -81,7 +83,21 @@ LoaderManager.LoaderCallbacks<List<String>> {
 	public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
 	    switch (item.getItemId()) {
 	    case R.id.multi:
-		mode.finish();
+		StringBuilder builder = new StringBuilder();
+		builder.append("Selected: ");
+		final SparseBooleanArray checkedItems = getListView().getCheckedItemPositions();
+                int checkedItemsCount = checkedItems.size();
+                for (int i = 0; i < checkedItemsCount; ++i) {
+                   // Item position in adapter
+                   int position = checkedItems.keyAt(i);
+                   // Add team if item is checked == TRUE!
+                   if(checkedItems.valueAt(i)) {
+                       builder.append(adapter.getItem(position));
+                       builder.append(" ");
+                   }
+                }
+                mode.finish();
+                Toast.makeText(getApplicationContext(), builder.toString(), Toast.LENGTH_LONG).show();
 		break;
 	    default:
 		break;
