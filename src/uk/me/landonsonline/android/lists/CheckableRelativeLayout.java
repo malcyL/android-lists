@@ -10,14 +10,12 @@ import android.view.ViewGroup;
 import android.widget.Checkable;
 import android.widget.RelativeLayout;
 
-public class CheckableRelativeLayout extends RelativeLayout implements
-        Checkable {
+public class CheckableRelativeLayout extends RelativeLayout implements Checkable {
 
     private boolean isChecked;
     private List<Checkable> checkableViews;
 
-    public CheckableRelativeLayout(Context context, AttributeSet attrs,
-                                   int defStyle) {
+    public CheckableRelativeLayout(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         initialise(attrs);
     }
@@ -32,16 +30,10 @@ public class CheckableRelativeLayout extends RelativeLayout implements
         initialise(null);
     }
 
-    /*
-      * @see android.widget.Checkable#isChecked()
-      */
     public boolean isChecked() {
         return isChecked;
     }
 
-    /*
-      * @see android.widget.Checkable#setChecked(boolean)
-      */
     public void setChecked(boolean isChecked) {
         this.isChecked = isChecked;
         for (Checkable c : checkableViews) {
@@ -49,9 +41,6 @@ public class CheckableRelativeLayout extends RelativeLayout implements
         }
     }
 
-    /*
-      * @see android.widget.Checkable#toggle()
-      */
     public void toggle() {
         this.isChecked = !this.isChecked;
         for (Checkable c : checkableViews) {
@@ -69,18 +58,11 @@ public class CheckableRelativeLayout extends RelativeLayout implements
         }
     }
 
-    /**
-     * Read the custom XML attributes
-     */
     private void initialise(AttributeSet attrs) {
         this.isChecked = false;
         this.checkableViews = new ArrayList<Checkable>(5);
     }
 
-    /**
-     * Add to our checkable list all the children of the view that implement the
-     * interface Checkable
-     */
     private void findCheckableChildren(View v) {
         if (v instanceof Checkable) {
             this.checkableViews.add((Checkable) v);
