@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uk.me.landonsonline.androidlists" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="uk.me.landonsonline.androidlists.SimpleListActivity"
+            android:label="@string/simple_list" >
+        </activity>
+        <activity
+            android:name="uk.me.landonsonline.androidlists.BackgroundThreadListActivity"
+            android:label="@string/background_thread_list" >
+        </activity>
+        <activity
+            android:name="uk.me.landonsonline.androidlists.CustomLayoutListActivity"
+            android:label="@string/custom_layout_list" >
+        </activity>
+        <activity
+            android:name="uk.me.landonsonline.androidlists.MultiSelectListActivity"
+            android:label="@string/multi_select_list" >
+        </activity>
+        <activity
+            android:name="uk.me.landonsonline.androidlists.CustomLayoutMultiSelectListActivity"
+            android:label="@string/custom_layout_multi_select_list" >
+        </activity>
+
+
+    </application>
+
+</manifest>
